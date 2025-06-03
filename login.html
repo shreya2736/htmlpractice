@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+    <body>
+        <main>
+            <p>WELCOME TO LOGIN PAGE</p>
+            <img src="loginphoto.jpg">
+            <form action="/logindetails.txt" method="post" enctype="multipart/form-data">
+                <!--for large files specify enctype=multipart/form-data-->
+                
+                <label for="username">username </label>
+                <input type="text" id="username" placeholder="spongebob" minlength="6" maxlength="15" required><br>
+
+                <label for="password">password </label>
+                <input type="password" id="password" placeholder="******" minlength="6" maxlength="8" required><br>
+
+                <label for="email">email </label>
+                <input type="email" id="email" placeholder="sqpnt@gmail.com" required><br>
+
+                <label for="phonenumber">phno </label>
+                <input type="tel" id="phonenumber" placeholder="123-456-7890" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"><br>
+
+                <label for="bday">birthdate </label>
+                <input type="date" id="bday" placeholder="dd-mm-yyyy"><br>
+
+                <label for="qty">quantity </label>
+                <input type="number" id="qty" min="0" max="99"><br>
+
+                <label>title </label><br>
+
+                <label for="ttle"></label>
+                <input type="radio" value="Mr" id="ttle" name="radiobutton">Mr<br>
+
+                <label for="ttle"></label>
+                <input type="radio" value="Mrs" id="ttle" name="radiobutton">Mrs<br>
+
+                <label for="ttle"></label>
+                <input type="radio" value="Ms" id="ttle" name="radiobutton">Ms<br>
+
+                <label for="subscription">subscribe </label>
+                <input type="checkbox" value="subscribe" id="subscription"><br>
+
+                <label for="file">input file </label>
+                <input type="file" id="file" accept="image/*,.pdf,.docx"><br>
+
+                <label for="submit"></label>
+                <button type="submit">submit form</button>
+
+            </form>
+        </main>
+    </body>
+</html>
